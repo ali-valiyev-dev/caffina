@@ -32,7 +32,7 @@ const Navbar = () => {
       </button>
 
       <div
-        className={`absolute left-0 top-14 bg-[#121517] w-full overflow-hidden transition-max-height duration-1000 ease-in-out ${
+        className={`absolute left-0 top-14 bg-[#121517] w-full overflow-hidden transition-max-height duration-500 ease-in-out ${
           isOpen ? "max-h-screen" : "max-h-0"
         }`}>
         <ul className="flex flex-col items-center justify-center gap-14 my-10 text-xl font-normal text-[#d9d9d9]">

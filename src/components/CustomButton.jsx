@@ -8,12 +8,16 @@ const CustomButton = ({
   heightMD,
   titleSize,
   titleSizeMD,
-  bgColor = "bg-logo-gradient",
-  borderColor = "border-none",
+  bgColor,
+  borderColor,
 }) => {
+  const backgroundColor = bgColor ? `bg-[${bgColor}]` : "bg-logo-gradient";
+  const bordersColor = borderColor ? `border-[${borderColor}]` : "border-none";
+
   return (
     <button
-      className={`rounded-[83px] font-sans font-semibold -tracking-[0.02em] text-white ${bgColor} border ${borderColor}`}>
+      className={`rounded-[83px] font-sans font-semibold -tracking-[0.02em] border text-white ${backgroundColor} ${bordersColor}
+      `}>
       <span
         className="flex items-center justify-center md:hidden"
         style={{

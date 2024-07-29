@@ -11,7 +11,7 @@ const CustomButton = ({
   bgColor,
   borderColor,
 }) => {
-  const backgroundColor = bgColor ? `bg-[${bgColor}]` : "bg-logo-gradient";
+  const backgroundColor = bgColor ? `bg-[${bgColor}]` : "bg-green-gradient";
   const bordersColor = borderColor ? `border-[${borderColor}]` : "border-none";
 
   return (

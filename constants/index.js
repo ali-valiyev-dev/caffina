@@ -23,3 +23,24 @@ export const stats = [
   { label: "Happy Customers", total: 2000 },
   { label: "Awards Winning", total: 28 },
 ];
+
+export const features = [
+  {
+    icon: "/heart.svg",
+    alt: "heart icon",
+    title: "Tasty",
+    subtitle: "We have the most delicious coffee",
+  },
+  {
+    icon: "/rocket.svg",
+    alt: "rocket icon",
+    title: "Fast",
+    subtitle: "Our cafe will serve you quickly",
+  },
+  {
+    icon: "/money.svg",
+    alt: "money icon",
+    title: "Available",
+    subtitle: "Cafe will serveat the most pleasant prices",
+  },
+];

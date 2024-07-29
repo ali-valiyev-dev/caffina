@@ -4,8 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "logo-gradient":
+        "green-gradient":
           "linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%)",
+        "white-gradient":
+          "linear-gradient(264.52deg, #FFFFFF 4.95%, #E5E5E5 64.19%, #FBFBFB 88.37%)",
       },
       fontFamily: {
         sans: [

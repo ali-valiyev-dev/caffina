@@ -5,6 +5,7 @@ import SectionTitle from "./SectionTitle";
 import SectionSubtitle from "./SectionSubtitle";
 import CustomButton from "./CustomButton";
 import Statistic from "./Statistic";
+import FeatureHighlights from "./FeatureHighlights";
 
 export {
   Logo,
@@ -14,4 +15,5 @@ export {
   SectionSubtitle,
   CustomButton,
   Statistic,
+  FeatureHighlights,
 };

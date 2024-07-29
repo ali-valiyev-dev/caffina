@@ -17,3 +17,9 @@ export const subtitles = [
 
   "Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!",
 ];
+
+export const stats = [
+  { label: "Premium Users", total: 9000 },
+  { label: "Happy Customers", total: 2000 },
+  { label: "Awards Winning", total: 28 },
+];

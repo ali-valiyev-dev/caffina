@@ -1,4 +1,4 @@
-import { titles, subtitles } from "../../constants";
+import { titles, subtitles, stats } from "../../constants";
 import SectionTitle from "./SectionTitle";
 import SectionSubtitle from "./SectionSubtitle";
 import CustomButton from "./CustomButton";
@@ -6,6 +6,7 @@ import {
   BreakPointHooks,
   breakpointsTailwind,
 } from "@react-hooks-library/core";
+import Statistic from "./Statistic";
 
 const Hero = () => {
   const { useSmaller } = BreakPointHooks(breakpointsTailwind);
@@ -46,9 +47,15 @@ const Hero = () => {
             />
           </div>
 
-          {/* <div className="">
-            Stats
-          </div> */}
+          <div className="flex items-center max-xl:justify-between xl:gap-12 mt-14">
+            {stats.map((stat, index) => (
+              <Statistic
+                key={index}
+                label={stat.label}
+                total={stat.total}
+              />
+            ))}
+          </div>
         </div>
 
         <div className="max-lg:mx-auto min-w-[271px] relative max-w-[472px] z-20">

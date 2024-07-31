@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.clip-cut-edge {
+  clip-path: polygon(0 0, 70% 0, 100% 20%, 100% 100%, 0 100%);
+}

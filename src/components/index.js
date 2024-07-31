@@ -6,6 +6,8 @@ import SectionSubtitle from "./SectionSubtitle";
 import CustomButton from "./CustomButton";
 import Statistic from "./Statistic";
 import FeatureHighlights from "./FeatureHighlights";
+import About from "./About";
+import ShowcaseImage from "./ShowcaseImage";
 
 export {
   Logo,
@@ -16,4 +18,6 @@ export {
   CustomButton,
   Statistic,
   FeatureHighlights,
+  About,
+  ShowcaseImage,
 };

@@ -9,6 +9,9 @@ export default {
         "white-gradient":
           "linear-gradient(264.52deg, #FFFFFF 4.95%, #E5E5E5 64.19%, #FBFBFB 88.37%)",
       },
+      boxShadow: {
+        custom: "-14px 26px 65px 0px rgba(0, 0, 0, 0.39)",
+      },
       fontFamily: {
         sans: [
           "Montserrat, sans-serif",

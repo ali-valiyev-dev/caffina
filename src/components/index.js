@@ -8,6 +8,8 @@ import Statistic from "./Statistic";
 import FeatureHighlights from "./FeatureHighlights";
 import About from "./About";
 import ShowcaseImage from "./ShowcaseImage";
+import Products from "./Products";
+import ProductCard from "./ProductCard";
 
 export {
   Logo,
@@ -20,4 +22,6 @@ export {
   FeatureHighlights,
   About,
   ShowcaseImage,
+  Products,
+  ProductCard,
 };

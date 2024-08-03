@@ -16,7 +16,7 @@ const CustomButton = ({
 
   return (
     <button
-      className={`rounded-[83px] font-sans font-semibold -tracking-[0.02em] border text-white ${backgroundColor} ${bordersColor}
+      className={`rounded-[83px] font-sans font-semibold -tracking-[0.02em] flex items-center justify-center border text-white ${backgroundColor} ${bordersColor}
       `}>
       <span
         className="flex items-center justify-center md:hidden"

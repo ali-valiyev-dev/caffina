@@ -1,4 +1,4 @@
-import { About, Events, Hero, Navbar, Products } from "./components";
+import { About, ContactUs, Events, Hero, Navbar, Products } from "./components";
 
 export default function App() {
   return (
@@ -8,6 +8,7 @@ export default function App() {
       <About />
       <Products />
       <Events />
+      <ContactUs />
     </header>
   );
 }

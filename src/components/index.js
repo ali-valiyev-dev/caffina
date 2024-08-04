@@ -12,6 +12,7 @@ import Products from "./Products";
 import ProductCard from "./ProductCard";
 import Events from "./Events";
 import EventItem from "./EventItem";
+import ContactUs from "./ContactUs";
 
 export {
   Logo,
@@ -28,4 +29,5 @@ export {
   ProductCard,
   Events,
   EventItem,
+  ContactUs,
 };

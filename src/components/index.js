@@ -10,6 +10,8 @@ import About from "./About";
 import ShowcaseImage from "./ShowcaseImage";
 import Products from "./Products";
 import ProductCard from "./ProductCard";
+import Events from "./Events";
+import EventItem from "./EventItem";
 
 export {
   Logo,
@@ -24,4 +26,6 @@ export {
   ShowcaseImage,
   Products,
   ProductCard,
+  Events,
+  EventItem,
 };

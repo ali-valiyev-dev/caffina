@@ -95,3 +95,31 @@ export const products = [
     image: "/brown-cup.png",
   },
 ];
+
+export const events = [
+  {
+    id: "1",
+    title: "Two Coffee For 1 Price",
+    image: "/event-1.png",
+  },
+  {
+    id: "2",
+    title: "Kitchen Tour",
+    image: "/event-2.png",
+  },
+  {
+    id: "3",
+    title: "Free Coffee For 3 Coffee",
+    image: "/event-3.png",
+  },
+  {
+    id: "4",
+    title: "Our Instagram",
+    image: "/event-4.png",
+  },
+  {
+    id: "5",
+    title: "Where Are You Choose Us?",
+    image: "/event-5.png",
+  },
+];

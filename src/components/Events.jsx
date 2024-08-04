@@ -5,15 +5,14 @@ import SectionTitle from "./SectionTitle";
 
 const Events = () => {
   return (
-    <section className="mt-16 xl:mt-24 flex flex-col">
-      <div className=" xl:float-end max-xl:px-10 xl:pr-32 flex flex-col xl:flex-row-reverse xl:gap-[72px] xl:items-center">
+    <section className="relative mt-16 xl:mt-24 flex flex-col ">
+      <div className=" xl:float-end max-xl:px-10 xl:pr-32 flex flex-col xl:flex-row-reverse xl:gap-[72px] xl:items-center z-50">
         <SectionTitle title={titles[3]} />
         <div className="my-9 xl:my-0 xl:w-[500px]">
           <SectionSubtitle subtitle={subtitles[3]} />
         </div>
       </div>
-
-      <div className="grid grid-cols-6 gap-3 xl:gap-6 px-10 xl:px-32 xl:mt-14">
+      <div className="grid grid-cols-6 gap-3 xl:gap-6 px-10 xl:px-32 xl:mt-14 z-50">
         {events.map((event, index) => (
           <div
             key={event.id}
@@ -31,6 +30,11 @@ const Events = () => {
           </div>
         ))}
       </div>
+      <img
+        className="max-xl:hidden absolute top-0 left-0 z-10"
+        src="/wavy-lines-3.svg"
+        alt="Decorative Wavy Lines"
+      />{" "}
     </section>
   );
 };

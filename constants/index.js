@@ -7,15 +7,15 @@ export const titles = [
 ];
 
 export const subtitles = [
-  "Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!",
+  "Explore our latest harmonious blends and exclusive discounts at our new location!",
 
-  "Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market",
+  "Celebrating over 100,000 orders in 2021 alone! Join us as we continue to revolutionize the coffee experience.",
 
-  "Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!",
+  "Discover your perfect blend with our limited-time offers and special discounts!",
 
-  "Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market",
+  "From coffee lovers to coffee makers, join us in celebrating our journey of over 100,000 orders last year!",
 
-  "Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!",
+  "Don't miss out on the unique flavors and special discounts at our newest Starbucks cafe!",
 ];
 
 export const stats = [

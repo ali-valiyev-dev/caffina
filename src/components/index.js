@@ -13,6 +13,8 @@ import ProductCard from "./ProductCard";
 import Events from "./Events";
 import EventItem from "./EventItem";
 import ContactUs from "./ContactUs";
+import ScrollToTop from "./ScrollToTop";
+import Footer from "./Footer";
 
 export {
   Logo,
@@ -30,4 +32,6 @@ export {
   Events,
   EventItem,
   ContactUs,
+  ScrollToTop,
+  Footer,
 };

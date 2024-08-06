@@ -123,3 +123,41 @@ export const events = [
     image: "/event-5.png",
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "Starbucks",
+    sub_links: [
+      { text: "About", url: "#" },
+      { text: "Partners", url: "#" },
+    ],
+  },
+  {
+    title: "We make",
+    sub_links: [
+      { text: "Process", url: "#" },
+      { text: "Ingredient", url: "#" },
+    ],
+  },
+  {
+    title: "Products",
+    sub_links: [
+      { text: "Cappuccino", url: "#" },
+      { text: "Latte", url: "#" },
+    ],
+  },
+  {
+    title: "Events",
+    sub_links: [
+      { text: "Kitchen tour", url: "#" },
+      { text: "Free coffee", url: "#" },
+    ],
+  },
+  {
+    title: "Contacts",
+    sub_links: [
+      { text: "Instagram", url: "#" },
+      { text: "Locations", url: "#" },
+    ],
+  },
+];

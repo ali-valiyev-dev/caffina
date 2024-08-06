@@ -1,4 +1,5 @@
 import { features } from "../../constants";
+import PulsingShadow from "./PulsingShadow";
 
 const FeatureHighlights = () => {
   return (
@@ -14,7 +15,7 @@ const FeatureHighlights = () => {
             alt={alt}
           />
 
-          <h4 className="text-xl lg:text-[32px] text-[#121517] font-medium leading-5 lg:leading-[52px] -tracking-wide">
+          <h4 className="text-xl lg:text-[32px] text-[#121517] font-medium leading-8 lg:leading-[52px] -tracking-wide">
             {title}
           </h4>
 
@@ -28,6 +29,12 @@ const FeatureHighlights = () => {
         className="absolute w-28 lg:w-44 -top-14 -right-14 lg:-top-20 lg:-left-20"
         src="/star-mark-2.svg"
         alt="Start mark"
+      />
+
+      <PulsingShadow
+        position="top-1/2 left-0"
+        firstBoxShadow="0px 0px 200px 200px rgba(35, 114, 73, 0.17)"
+        secondBoxShadow="0px 0px 200px 200px rgba(53, 198, 107, 0.22)"
       />
     </div>
   );

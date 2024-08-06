@@ -4,17 +4,16 @@ import PropTypes from "prop-types";
 
 const PulsingShadowDiv = ({ position, firstBoxShadow, secondBoxShadow }) => {
   const divRef = useRef(null);
-
   useEffect(() => {
     gsap.fromTo(
       divRef.current,
       { boxShadow: firstBoxShadow },
       {
         boxShadow: secondBoxShadow,
-        duration: 5,
+        duration: 3,
         repeat: -1,
         yoyo: true,
-        ease: "power4.inOut",
+        ease: "back.inOut",
       }
     );
   }, [firstBoxShadow, secondBoxShadow]);

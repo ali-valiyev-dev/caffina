@@ -11,7 +11,7 @@ const ContactUs = () => {
       className="borders flex flex-col-reverse xl:flex-row justify-between relative px-10 xl:px-32 py-8 xl:py-16 max-lg:gap-12">
       <div className="relative xl:w-[390px] flex flex-col xl:gap-[72px] z-50">
         <SectionTitle title={titles[4]} />
-        <div className="my-9 xl:my-0 ">
+        <div className="my-9 xl:my-0">
           <SectionSubtitle subtitle={subtitles[4]} />
         </div>
 
@@ -22,7 +22,12 @@ const ContactUs = () => {
               src="/instagram-icon.svg"
               alt="Instagram icon"
             />
-            <span>@supercoffee</span>
+            <a
+              href="#"
+              rel="noopener noreferrer"
+              className="hover:underline">
+              @supercoffee
+            </a>
           </div>
 
           <div className="flex items-center gap-2">
@@ -31,7 +36,11 @@ const ContactUs = () => {
               src="/phone-icon.svg"
               alt="Phone Icon"
             />
-            <span>+7-999-999-99-99</span>
+            <a
+              href="tel:+79999999999"
+              className="hover:underline">
+              +7-999-999-99-99
+            </a>
           </div>
         </div>
 
@@ -56,12 +65,12 @@ const ContactUs = () => {
       </div>
 
       <img
-        className="max-sm:hidden absolute top-40 right-0 z-10 "
+        className="max-sm:hidden absolute top-40 right-0 z-10"
         src="/wavy-lines-4-desktop.svg"
         alt="Decorative Wavy Lines"
       />
       <img
-        className="sm:hidden absolute -top-10 right-0 z-10 "
+        className="sm:hidden absolute -top-10 right-0 z-10"
         src="/wavy-lines-4-mobile.svg"
         alt="Decorative Wavy Lines"
       />

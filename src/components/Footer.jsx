@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="w-full flex items-center justify-between">
         <a
           href="tel:+79999999999"
-          className="font-medium text-base md:text-2xl text-[#35C66B]">
+          className="font-medium text-base md:text-2xl text-[#35C66B] hover:underline">
           +7-999-999-99-99
         </a>
 

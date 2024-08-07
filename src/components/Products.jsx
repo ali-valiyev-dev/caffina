@@ -59,7 +59,7 @@ const Products = () => {
           <button
             onClick={handleNext}
             type="button"
-            className="w-14 xl:w-20 h-14 xl:h-20 border border-[#237249] text-[#237249] text-3xl rounded-2xl xl:rounded-3xl">
+            className="w-14 xl:w-20 h-14 xl:h-20 border border-[#237249] text-[#237249] active:bg-[#35c66b] transition-all duration-300 ease-in-out text-3xl rounded-2xl xl:rounded-3xl">
             &#8594;
           </button>
         </div>

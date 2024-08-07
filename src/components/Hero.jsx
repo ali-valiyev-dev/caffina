@@ -42,7 +42,7 @@ const Hero = () => {
           <img
             className="max-lg:px-16"
             src="/hero-coffee-cup.svg"
-            alt="Coffee Cup"
+            alt="Starbucks Coffee Cup"
           />
 
           <PulsingShadow position="top-40 right-40" />

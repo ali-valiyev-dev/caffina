@@ -50,6 +50,7 @@ const Products = () => {
                 price={product.price}
                 capacity={product.capacity}
                 image={product.image}
+                alt={product.alt}
               />
             </div>
           ))}

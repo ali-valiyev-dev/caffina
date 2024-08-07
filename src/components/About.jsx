@@ -21,7 +21,7 @@ const About = () => {
         <img
           className="sm:hidden"
           src="/star-mark-2.svg"
-          alt="Star mark"
+          alt=""
           width={100}
           height={100}
         />
@@ -49,12 +49,12 @@ const About = () => {
       <img
         className="max-sm:hidden absolute top-40 right-0 z-10 "
         src="/wavy-lines-2-desktop.svg"
-        alt="Decorative Wavy Lines"
+        alt=""
       />
       <img
         className="sm:hidden absolute -top-10 right-0 z-10 "
         src="/wavy-lines-2-mobile.svg"
-        alt="Decorative Wavy Lines"
+        alt=""
       />
     </section>
   );

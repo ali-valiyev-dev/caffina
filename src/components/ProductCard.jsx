@@ -1,7 +1,7 @@
 import CustomButton from "./CustomButton";
 import PropTypes from "prop-types";
 
-const ProductCard = ({ name, description, price, capacity, image }) => {
+const ProductCard = ({ name, description, price, capacity, image, alt }) => {
   return (
     <div className="rounded-[20px] lg:rounded-[30px] px-5 lg:px-11 py-5 lg:py-6 border border-[#dadada70] w-[183px] lg:w-[277px] h-[380px] lg:h-[565px] text-center flex flex-col justify-between items-center">
       <div className="images relative h-[141px] lg:h-[241px] flex items-center justify-center overflow-hidden">
@@ -10,7 +10,7 @@ const ProductCard = ({ name, description, price, capacity, image }) => {
         <img
           className="absolute w-[105px] lg:w-[180px]"
           src={image}
-          alt="Coffee Cup"
+          alt={alt}
         />
       </div>
 
@@ -43,6 +43,7 @@ ProductCard.propTypes = {
   price: PropTypes.string.isRequired,
   capacity: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 };
 
 export default ProductCard;

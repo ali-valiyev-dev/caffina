@@ -27,19 +27,16 @@ export const stats = [
 export const features = [
   {
     icon: "/heart.svg",
-    alt: "heart icon",
     title: "Tasty",
     subtitle: "We have the most delicious coffee",
   },
   {
     icon: "/rocket.svg",
-    alt: "rocket icon",
     title: "Fast",
     subtitle: "Our cafe will serve you quickly",
   },
   {
     icon: "/money.svg",
-    alt: "money icon",
     title: "Available",
     subtitle: "Cafe will serveat the most pleasant prices",
   },
@@ -53,6 +50,7 @@ export const products = [
     price: "5.95",
     capacity: "300",
     image: "/green-cup.png",
+    alt: "Latte - Smooth espresso with milk",
   },
   {
     id: 2,
@@ -61,6 +59,7 @@ export const products = [
     price: "6.45",
     capacity: "300",
     image: "/light-green-cup.png",
+    alt: "Macchiato - Espresso with caramel drizzle",
   },
   {
     id: 3,
@@ -69,6 +68,7 @@ export const products = [
     price: "6.95",
     capacity: "300",
     image: "/brown-cup.png",
+    alt: "Mocha - Blended chocolate and coffee",
   },
   {
     id: 4,
@@ -77,6 +77,7 @@ export const products = [
     price: "6.25",
     capacity: "300",
     image: "/green-cup.png",
+    alt: "Hazelnut - Espresso with hazelnut syrup",
   },
   {
     id: 5,
@@ -85,6 +86,7 @@ export const products = [
     price: "6.75",
     capacity: "300",
     image: "/light-green-cup.png",
+    alt: "Pumpkin - Pumpkin spice with whipped cream",
   },
   {
     id: 6,
@@ -93,6 +95,7 @@ export const products = [
     price: "5.75",
     capacity: "300",
     image: "/brown-cup.png",
+    alt: "Iced Coffee - Chilled coffee with caramel",
   },
 ];
 

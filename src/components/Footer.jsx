@@ -57,7 +57,7 @@ const Footer = () => {
           <img
             className="object-cover"
             src="/instagram-icon.svg"
-            alt="Instagram icon"
+            alt=""
           />
         </a>
       </div>

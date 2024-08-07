@@ -20,7 +20,7 @@ const ContactUs = () => {
             <img
               className="w-10 xl:w-14"
               src="/instagram-icon.svg"
-              alt="Instagram icon"
+              alt=""
             />
             <a
               href="#"
@@ -34,7 +34,7 @@ const ContactUs = () => {
             <img
               className="w-10 xl:w-14 px-1 xl:px-[7px]"
               src="/phone-icon.svg"
-              alt="Phone Icon"
+              alt=""
             />
             <a
               href="tel:+79999999999"
@@ -56,7 +56,7 @@ const ContactUs = () => {
         <img
           className="sm:hidden"
           src="/star-mark-2.svg"
-          alt="Star Mark"
+          alt=""
           width={100}
           height={100}
         />
@@ -67,12 +67,12 @@ const ContactUs = () => {
       <img
         className="max-sm:hidden absolute top-40 right-0 z-10"
         src="/wavy-lines-4-desktop.svg"
-        alt="Decorative Wavy Lines"
+        alt=""
       />
       <img
         className="sm:hidden absolute -top-10 right-0 z-10"
         src="/wavy-lines-4-mobile.svg"
-        alt="Decorative Wavy Lines"
+        alt=""
       />
     </section>
   );

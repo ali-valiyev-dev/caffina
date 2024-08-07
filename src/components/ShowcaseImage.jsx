@@ -41,7 +41,7 @@ const ShowcaseImage = ({ mirror, imgSrc, alt }) => {
             "-right-10": !mirror,
           })}
           src="/star-mark-2.svg"
-          alt="Star mark"
+          alt=""
           width={250}
           height={250}
         />

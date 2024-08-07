@@ -74,7 +74,7 @@ const Navbar = () => {
           }`}>
           <img
             src="/hamburger-menu.svg"
-            alt="hamburger menu"
+            alt=""
           />
         </span>
       </button>

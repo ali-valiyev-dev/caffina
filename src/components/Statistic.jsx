@@ -20,7 +20,7 @@ const Statistic = ({ label, total }) => {
           each: 0.1,
           onComplete: () => {
             valueRef.current.innerHTML =
-              total > 1000 ? `${total / 1000}K` : `${total}`;
+              total > 1000 ? `${(total / 1000).toFixed(0)}K` : `${total}`;
             setIsLoaded(true);
           },
         },

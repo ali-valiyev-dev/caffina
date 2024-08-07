@@ -19,8 +19,8 @@ export const subtitles = [
 ];
 
 export const stats = [
-  { label: "Premium Users", total: 9000 },
-  { label: "Happy Customers", total: 2000 },
+  { label: "Premium Users", total: 9230 },
+  { label: "Happy Customers", total: 2340 },
   { label: "Awards Winning", total: 28 },
 ];
 

@@ -41,15 +41,7 @@ const About = () => {
           />
 
           <div className="absolute">
-            <CustomButton
-              title="&#9654; Cooking Process"
-              width={222}
-              widthMD={333}
-              height={50}
-              heightMD={75}
-              titleSize={16}
-              titleSizeMD={24}
-            />
+            <CustomButton title="&#9654; Cooking Process" />
           </div>
         </div>
       </div>

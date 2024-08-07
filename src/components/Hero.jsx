@@ -20,23 +20,9 @@ const Hero = () => {
             <SectionSubtitle subtitle={subtitles[0]} />
           </div>
           <div className="flex gap-4">
-            <CustomButton
-              title="Select a coffee"
-              width={222}
-              widthMD={333}
-              height={50}
-              heightMD={75}
-              titleSize={16}
-              titleSizeMD={24}
-            />
+            <CustomButton title="Select a coffee" />
             <CustomButton
               title="More"
-              width={113}
-              widthMD={168}
-              height={50}
-              heightMD={75}
-              titleSize={16}
-              titleSizeMD={24}
               bgColor="#121517"
               borderColor="#dadada"
             />

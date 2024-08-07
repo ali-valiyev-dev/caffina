@@ -12,15 +12,7 @@ const EventItem = ({ image, title }) => {
         {title}
       </h3>
 
-      <CustomButton
-        title="More"
-        width={96}
-        widthMD={168}
-        height={43}
-        heightMD={75}
-        titleSize={14}
-        titleSizeMD={24}
-      />
+      <CustomButton title="More" />
     </div>
   );
 };

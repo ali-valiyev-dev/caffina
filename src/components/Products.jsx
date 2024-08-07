@@ -28,7 +28,7 @@ const Products = () => {
   return (
     <section
       id="products"
-      className="borders relative py-8 xl:py-4">
+      className="relative py-8 xl:py-4">
       <div className="max-xl:px-10 xl:ml-32 max-w-[908px] flex flex-col xl:flex-row xl:gap-[88px] xl:items-center">
         <SectionTitle title={titles[2]} />
         <div className="my-9 xl:my-0">
@@ -36,7 +36,7 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="flex items-center xl:mt-16 ">
+      <div className="flex items-center xl:mt-14 ">
         <div className="w-[100rem] flex gap-9 xl:gap-12 justify-end  xl:pr-14 overflow-hidden ">
           {products.map(product => (
             <div

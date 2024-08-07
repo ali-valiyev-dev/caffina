@@ -2,11 +2,12 @@ import { subtitles, titles } from "../../constants";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ShowcaseImage from "./ShowcaseImage";
+import PulsingShadow from "./PulsingShadow";
 
 const ContactUs = () => {
   return (
     <section className="flex flex-col-reverse xl:flex-row justify-between relative px-10 xl:px-32 my-16 xl:my-32 max-lg:gap-12">
-      <div className="xl:w-[390px] flex flex-col xl:gap-[72px] z-50">
+      <div className="relative xl:w-[390px] flex flex-col xl:gap-[72px] z-50">
         <SectionTitle title={titles[4]} />
         <div className="my-9 xl:my-0 ">
           <SectionSubtitle subtitle={subtitles[4]} />
@@ -31,9 +32,11 @@ const ContactUs = () => {
             <span>+7-999-999-99-99</span>
           </div>
         </div>
+
+        <PulsingShadow position="top-40 left-40" />
       </div>
 
-      <div className="flex flex-row-reverse md:justify-center xl:items-end gap-5 z-50">
+      <div className="relative flex flex-row-reverse md:justify-center xl:items-end gap-5 z-50">
         <ShowcaseImage
           mirror={true}
           imgSrc="/showcase-2.png"
@@ -46,6 +49,8 @@ const ContactUs = () => {
           width={100}
           height={100}
         />
+
+        <PulsingShadow position="top-40 right-80" />
       </div>
 
       <img

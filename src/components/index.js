@@ -15,6 +15,7 @@ import EventItem from "./EventItem";
 import ContactUs from "./ContactUs";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./Footer";
+import PulsingShadow from "./PulsingShadow";
 
 export {
   Logo,
@@ -34,4 +35,5 @@ export {
   ContactUs,
   ScrollToTop,
   Footer,
+  PulsingShadow,
 };

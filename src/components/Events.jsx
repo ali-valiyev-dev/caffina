@@ -2,6 +2,7 @@ import { events, subtitles, titles } from "../../constants";
 import EventItem from "./EventItem";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
+import PulsingShadow from "./PulsingShadow";
 
 const Events = () => {
   return (
@@ -34,7 +35,10 @@ const Events = () => {
         className="max-xl:hidden absolute top-0 left-0 z-10"
         src="/wavy-lines-3.svg"
         alt="Decorative Wavy Lines"
-      />{" "}
+      />
+      <PulsingShadow position="bottom-72 right-96 z-10" />
+      <PulsingShadow position="bottom-72 left-96 z-10" />
+      <PulsingShadow position="top-1/2 left-1/2 z-10" />
     </section>
   );
 };

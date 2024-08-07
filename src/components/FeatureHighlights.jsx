@@ -31,11 +31,7 @@ const FeatureHighlights = () => {
         alt="Start mark"
       />
 
-      <PulsingShadow
-        position="top-1/2 left-0"
-        firstBoxShadow="0px 0px 200px 200px rgba(35, 114, 73, 0.17)"
-        secondBoxShadow="0px 0px 200px 200px rgba(53, 198, 107, 0.22)"
-      />
+      <PulsingShadow position="top-1/2 left-20" />
     </div>
   );
 };

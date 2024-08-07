@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ProductCard from "./ProductCard";
+import PulsingShadow from "./PulsingShadow";
 
 const Products = () => {
   const [products, setProducts] = useState(initialProducts);
@@ -26,7 +27,7 @@ const Products = () => {
   };
 
   return (
-    <section className="mt-16 xl:mt-24">
+    <section className="relative mt-16 xl:mt-24">
       <div className="max-xl:px-10 xl:ml-32 max-w-[908px] flex flex-col xl:flex-row xl:gap-[88px] xl:items-center">
         <SectionTitle title={titles[2]} />
         <div className="my-9 xl:my-0">
@@ -63,6 +64,7 @@ const Products = () => {
           </button>
         </div>
       </div>
+      <PulsingShadow position="bottom-72 right-72 z-10" />
     </section>
   );
 };

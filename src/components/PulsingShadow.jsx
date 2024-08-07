@@ -2,21 +2,21 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import PropTypes from "prop-types";
 
-const PulsingShadowDiv = ({ position, firstBoxShadow, secondBoxShadow }) => {
+const PulsingShadow = ({ position }) => {
   const divRef = useRef(null);
   useEffect(() => {
     gsap.fromTo(
       divRef.current,
-      { boxShadow: firstBoxShadow },
+      { boxShadow: "0px 0px 300px 150px rgba(35, 114, 73, 0.10)" },
       {
-        boxShadow: secondBoxShadow,
-        duration: 3,
+        boxShadow: "0px 0px 300px 150px rgba(53, 198, 107, 0.15)",
+        duration: 5,
         repeat: -1,
         yoyo: true,
-        ease: "back.inOut",
+        ease: "power3.inOut",
       }
     );
-  }, [firstBoxShadow, secondBoxShadow]);
+  }, []);
 
   return (
     <div
@@ -26,10 +26,8 @@ const PulsingShadowDiv = ({ position, firstBoxShadow, secondBoxShadow }) => {
   );
 };
 
-PulsingShadowDiv.propTypes = {
+PulsingShadow.propTypes = {
   position: PropTypes.string,
-  firstBoxShadow: PropTypes.string,
-  secondBoxShadow: PropTypes.string,
 };
 
-export default PulsingShadowDiv;
+export default PulsingShadow;

@@ -1,5 +1,6 @@
 import { subtitles, titles } from "../../constants";
 import CustomButton from "./CustomButton";
+import PulsingShadow from "./PulsingShadow";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ShowcaseImage from "./ShowcaseImage";
@@ -13,6 +14,8 @@ const About = () => {
           imgSrc="/showcase-1.png"
         />
 
+        <PulsingShadow position="bottom-40 left-40" />
+
         <img
           className="sm:hidden"
           src="/star-mark-2.svg"
@@ -24,6 +27,7 @@ const About = () => {
 
       <div className="flex flex-col justify-center relative z-30 px-0 md:px-6 xl:px-0 lg:max-w-[457px]">
         <SectionTitle title={titles[1]} />
+        <PulsingShadow position="top-40 right-40" />
         <div className="my-9 lg:my-14">
           <SectionSubtitle subtitle={subtitles[1]} />
         </div>

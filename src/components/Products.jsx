@@ -4,7 +4,6 @@ import {
   titles,
 } from "../../constants";
 import { useState } from "react";
-import Box from "@mui/material/Box";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ProductCard from "./ProductCard";
@@ -27,7 +26,9 @@ const Products = () => {
   };
 
   return (
-    <section className="relative mt-16 xl:mt-24">
+    <section
+      id="products"
+      className="borders relative py-8 xl:py-4">
       <div className="max-xl:px-10 xl:ml-32 max-w-[908px] flex flex-col xl:flex-row xl:gap-[88px] xl:items-center">
         <SectionTitle title={titles[2]} />
         <div className="my-9 xl:my-0">
@@ -38,12 +39,11 @@ const Products = () => {
       <div className="flex items-center xl:mt-16 ">
         <div className="w-[100rem] flex gap-9 xl:gap-12 justify-end  xl:pr-14 overflow-hidden ">
           {products.map(product => (
-            <Box
+            <div
               key={product.id}
-              sx={{
-                transition: "transform 400ms ease-in-out",
-                transform: isTransitioning ? "translateX(117%)" : "none",
-              }}>
+              className={`transition-transform duration-500 ease-in-out ${
+                isTransitioning ? "transform translate-x-[120%]" : ""
+              }`}>
               <ProductCard
                 name={product.name}
                 description={product.description}
@@ -51,7 +51,7 @@ const Products = () => {
                 capacity={product.capacity}
                 image={product.image}
               />
-            </Box>
+            </div>
           ))}
         </div>
 

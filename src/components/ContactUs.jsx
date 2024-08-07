@@ -6,7 +6,9 @@ import PulsingShadow from "./PulsingShadow";
 
 const ContactUs = () => {
   return (
-    <section className="flex flex-col-reverse xl:flex-row justify-between relative px-10 xl:px-32 my-16 xl:my-32 max-lg:gap-12">
+    <section
+      id="contacts"
+      className="borders flex flex-col-reverse xl:flex-row justify-between relative px-10 xl:px-32 py-8 xl:py-16 max-lg:gap-12">
       <div className="relative xl:w-[390px] flex flex-col xl:gap-[72px] z-50">
         <SectionTitle title={titles[4]} />
         <div className="my-9 xl:my-0 ">

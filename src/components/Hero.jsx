@@ -8,7 +8,9 @@ import PulsingShadow from "./PulsingShadow";
 
 const Hero = () => {
   return (
-    <section className="relative bg-transparent mt-10 lg:mt-20 lg:px-10 xl:px-32">
+    <section
+      id="hero"
+      className="borders relative bg-transparent py-10 lg:py-20 lg:px-10 xl:px-32">
       <div className="relative flex flex-col-reverse lg:flex-row lg:justify-between z-20">
         <div className="max-w-[574px] max-md:pl-6 max-md:pr-12 max-lg:pt-7 max-lg:pl-10 z-30">
           <SectionTitle title={titles[0]} />

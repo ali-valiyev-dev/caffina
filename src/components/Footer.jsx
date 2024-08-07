@@ -4,7 +4,7 @@ import { footerLinks } from "../../constants";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B0C0D] z-50 relative flex flex-col gap-9 xl:gap-16 p-6 xl:px-32 xl:py-9 mt-16 xl:mt-32">
+    <footer className="borders bg-[#0B0C0D] z-50 relative flex flex-col gap-9 xl:gap-16 p-6 xl:px-32 xl:py-9">
       <div className="flex flex-col xl:flex-row justify-between gap-9">
         <div className="main-top-mobile">
           <div className="flex justify-between">

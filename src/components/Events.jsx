@@ -6,7 +6,9 @@ import PulsingShadow from "./PulsingShadow";
 
 const Events = () => {
   return (
-    <section className="relative mt-16 xl:mt-24 flex flex-col ">
+    <section
+      id="events"
+      className="borders relative py-8 flex flex-col ">
       <div className=" xl:float-end max-xl:px-10 xl:pr-32 flex flex-col xl:flex-row-reverse xl:gap-[72px] xl:items-center z-50">
         <SectionTitle title={titles[3]} />
         <div className="my-9 xl:my-0 xl:w-[500px]">

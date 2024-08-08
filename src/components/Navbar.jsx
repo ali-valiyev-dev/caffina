@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="borders flex max-lg:justify-between items-center mt-6 lg:mt-12 px-6 lg:px-10 xl:px-32 gap-24">
+    <nav className="flex max-lg:justify-between items-center mt-6 lg:mt-12 px-6 lg:px-10 xl:px-32 gap-24">
       <Logo />
       {/* Desktop Navbar */}
       <ul className="max-lg:hidden flex items-center justify-center gap-24 text-lg font-normal text-[#d9d9d9]">

@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="borders relative px-10 xl:px-32 py-8 xl:py-16 max-lg:gap-12 flex flex-col lg:flex-row xl:justify-between">
+      className="relative px-10 xl:px-32 py-8 xl:py-16 max-lg:gap-12 flex flex-col lg:flex-row xl:justify-between">
       <div className="relative z-30 flex justify-between">
         <ShowcaseImage
           mirror={false}

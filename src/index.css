@@ -7,7 +7,3 @@
 .clip-cut-edge {
   clip-path: polygon(0 0, 70% 0, 100% 20%, 100% 100%, 0 100%);
 }
-
-.borders {
-  border: 1px solid rebeccapurple;
-}

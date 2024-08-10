@@ -5,7 +5,6 @@ import SectionTitle from "./SectionTitle";
 import SectionSubtitle from "./SectionSubtitle";
 import CustomButton from "./CustomButton";
 import Statistic from "./Statistic";
-import FeatureHighlights from "./FeatureHighlights";
 import About from "./About";
 import ShowcaseImage from "./ShowcaseImage";
 import Products from "./Products";
@@ -25,7 +24,6 @@ export {
   SectionSubtitle,
   CustomButton,
   Statistic,
-  FeatureHighlights,
   About,
   ShowcaseImage,
   Products,

@@ -3,13 +3,48 @@ import {
   subtitles,
   titles,
 } from "../../constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ProductCard from "./ProductCard";
 import PulsingShadow from "./PulsingShadow";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Products = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".animate-products-title",
+      { opacity: 0, x: 1000 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: ".animate-products-title",
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+    gsap.fromTo(
+      ".animate-products-list",
+      { opacity: 0, x: -1000 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: ".animate-products-list",
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
+
   const [products, setProducts] = useState(initialProducts);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -29,14 +64,14 @@ const Products = () => {
     <section
       id="products"
       className="relative py-8 xl:py-4">
-      <div className="max-xl:px-10 xl:ml-32 max-w-[908px] flex flex-col xl:flex-row xl:gap-[88px] xl:items-center">
+      <div className="animate-products-title max-xl:px-10 xl:ml-32 max-w-[908px] flex flex-col xl:flex-row xl:gap-[88px] xl:items-center">
         <SectionTitle title={titles[2]} />
         <div className="my-9 xl:my-0">
           <SectionSubtitle subtitle={subtitles[2]} />
         </div>
       </div>
 
-      <div className="flex items-center xl:mt-14 ">
+      <div className="animate-products-list flex items-center xl:mt-14 ">
         <div className="w-[100rem] flex gap-9 xl:gap-12 justify-end  xl:pr-14 overflow-hidden ">
           {products.map(product => (
             <div
@@ -48,7 +83,7 @@ const Products = () => {
                 name={product.name}
                 description={product.description}
                 price={product.price}
-                capacity={product.capacity}
+                rating={product.rating}
                 image={product.image}
                 alt={product.alt}
               />
@@ -60,7 +95,7 @@ const Products = () => {
           <button
             onClick={handleNext}
             type="button"
-            className="w-14 xl:w-20 h-14 xl:h-20 border border-[#237249] text-[#237249] active:bg-[#35c66b] transition-all duration-300 ease-in-out text-3xl rounded-2xl xl:rounded-3xl">
+            className="w-14 xl:w-20 h-14 xl:h-20 border border-cappuccino text-cappuccino active:bg-espresso  transition-all duration-300 ease-in-out text-3xl rounded-2xl xl:rounded-3xl">
             &#8594;
           </button>
         </div>

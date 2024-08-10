@@ -29,7 +29,7 @@ const Statistic = ({ label, total }) => {
   }, [total]);
 
   return (
-    <div className="max-w-32">
+    <div className="statistic max-w-32">
       <div className="flex items-center ">
         <h3
           ref={valueRef}
@@ -37,12 +37,12 @@ const Statistic = ({ label, total }) => {
           0
         </h3>
         {isLoaded && (
-          <span className="text-[#35C66B] text-[41px] xl:text-6xl leading-[45px] xl:leading-[68px]">
+          <span className=" text-espresso text-[41px] xl:text-6xl leading-[45px] xl:leading-[68px]">
             +
           </span>
         )}
       </div>
-      <p className="text-lg text-[#D9D9D9]">{label}</p>
+      <p className="text-lg text-latte">{label}</p>
     </div>
   );
 };

@@ -4,10 +4,18 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "green-gradient":
-          "linear-gradient(263.46deg, #237249 3.14%, #35C66B 87.2%)",
-        "white-gradient":
-          "linear-gradient(264.52deg, #FFFFFF 4.95%, #E5E5E5 64.19%, #FBFBFB 88.37%)",
+        "espresso-gradient":
+          "linear-gradient(263.46deg, #5a423a 3.14%, #c1a68d 87.2%)",
+      },
+      colors: {
+        dark: "#121416",
+        espresso: "#5A423A",
+        cappuccino: "#C1A68D",
+        latte: "#FFF2E5",
+        "cappuccino-light": "#C1A68D70",
+        "dark-gray": "#0b0c0d",
+        "lighter-gray": "#bbb3b36e",
+        "light-gray": "#bbb3b3",
       },
       fontFamily: {
         sans: [

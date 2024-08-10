@@ -1,5 +1,5 @@
 export const titles = [
-  "New Cafe by StarBucks",
+  "New Cafe by Caffina",
   "We make delicious",
   "Our New Products",
   "Our New Events",
@@ -7,146 +7,124 @@ export const titles = [
 ];
 
 export const subtitles = [
-  "Explore our latest harmonious blends and exclusive discounts at our new location!",
-
-  "Celebrating over 100,000 orders in 2021 alone! Join us as we continue to revolutionize the coffee experience.",
-
-  "Discover your perfect blend with our limited-time offers and special discounts!",
-
-  "From coffee lovers to coffee makers, join us in celebrating our journey of over 100,000 orders last year!",
-
-  "Don't miss out on the unique flavors and special discounts at our newest Starbucks cafe!",
+  "Discover our latest coffee creations and enjoy special offers at our new cafe location!",
+  "Join us in celebrating over 100,000 cups served! Experience the future of coffee today.",
+  "Find your perfect brew with our exclusive deals and limited-time offers!",
+  "From coffee enthusiasts to artisans, celebrate our journey of crafting over 100,000 brews last year!",
+  "Experience unique flavors and enjoy exclusive discounts at our newest coffee house!",
 ];
 
 export const stats = [
-  { label: "Premium Users", total: 9230 },
+  { label: "Premium Users", total: 5230 },
   { label: "Happy Customers", total: 2340 },
   { label: "Awards Winning", total: 28 },
-];
-
-export const features = [
-  {
-    icon: "/heart.svg",
-    title: "Tasty",
-    subtitle: "We have the most delicious coffee",
-  },
-  {
-    icon: "/rocket.svg",
-    title: "Fast",
-    subtitle: "Our cafe will serve you quickly",
-  },
-  {
-    icon: "/money.svg",
-    title: "Available",
-    subtitle: "Cafe will serveat the most pleasant prices",
-  },
 ];
 
 export const products = [
   {
     id: 1,
-    name: "Latte",
+    name: "Velvet Brew",
     description: "Smooth espresso with milk.",
     price: "5.95",
-    capacity: "300",
-    image: "/green-cup.png",
-    alt: "Latte - Smooth espresso with milk",
+    rating: "4.5",
+    image: "/cup-1.png",
+    alt: "Velvet Brew - Smooth espresso with milk",
   },
   {
     id: 2,
-    name: "Macchiato",
-    description: "Espresso with caramel drizzle.",
+    name: "Toffee Crunch",
+    description: "Espresso with a hint of toffee.",
     price: "6.45",
-    capacity: "300",
-    image: "/light-green-cup.png",
-    alt: "Macchiato - Espresso with caramel drizzle",
+    rating: "4.8",
+    image: "/cup-1.png",
+    alt: "Toffee Crunch - Espresso with a hint of toffee",
   },
   {
     id: 3,
-    name: "Mocha",
-    description: "Blended chocolate and coffee.",
+    name: "Choco Fusion",
+    description: "Chocolate and coffee blend.",
     price: "6.95",
-    capacity: "300",
-    image: "/brown-cup.png",
-    alt: "Mocha - Blended chocolate and coffee",
+    rating: "4.7",
+    image: "/cup-1.png",
+    alt: "Choco Fusion - Chocolate and coffee blend",
   },
   {
     id: 4,
-    name: "Hazelnut",
+    name: "Nutty Espresso",
     description: "Espresso with hazelnut syrup.",
     price: "6.25",
-    capacity: "300",
-    image: "/green-cup.png",
-    alt: "Hazelnut - Espresso with hazelnut syrup",
+    rating: "4.9",
+    image: "/cup-1.png",
+    alt: "Nutty Espresso - Espresso with hazelnut syrup",
   },
   {
     id: 5,
-    name: "Pumpkin",
-    description: "Pumpkin spice with whipped cream.",
+    name: "Autumn Spice",
+    description: "Pumpkin spice with cream.",
     price: "6.75",
-    capacity: "300",
-    image: "/light-green-cup.png",
-    alt: "Pumpkin - Pumpkin spice with whipped cream",
+    rating: "5",
+    image: "/cup-1.png",
+    alt: "Autumn Spice - Pumpkin spice with cream",
   },
   {
     id: 6,
-    name: "Iced Coffee",
-    description: "Chilled coffee with caramel.",
+    name: "Cool Brew",
+    description: "Iced coffee with caramel.",
     price: "5.75",
-    capacity: "300",
-    image: "/brown-cup.png",
-    alt: "Iced Coffee - Chilled coffee with caramel",
+    rating: "4.4",
+    image: "/cup-1.png",
+    alt: "Cool Brew - Iced coffee with caramel",
   },
 ];
 
 export const events = [
   {
     id: "1",
-    title: "Two Coffee For 1 Price",
-    image: "/event-1.png",
+    title: "Buy One, Get One Free",
+    image: "/event-11.jpg",
   },
   {
     id: "2",
-    title: "Kitchen Tour",
-    image: "/event-2.png",
+    title: "Tour Our Kitchen",
+    image: "/event-66.jpg",
   },
   {
     id: "3",
-    title: "Free Coffee For 3 Coffee",
-    image: "/event-3.png",
+    title: "Free Coffee with Three",
+    image: "/event-99.jpg",
   },
   {
     id: "4",
-    title: "Our Instagram",
-    image: "/event-4.png",
+    title: "Follow Us on Instagram",
+    image: "/event-32.jpg",
   },
   {
     id: "5",
-    title: "Where Are You Choose Us?",
-    image: "/event-5.png",
+    title: "Why We are the Best",
+    image: "/event-88.jpg",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Starbucks",
+    title: "Caffina",
     sub_links: [
       { text: "About", url: "#" },
       { text: "Partners", url: "#" },
     ],
   },
   {
-    title: "We make",
+    title: "We Make",
     sub_links: [
       { text: "Process", url: "#" },
-      { text: "Ingredient", url: "#" },
+      { text: "Ingredients", url: "#" },
     ],
   },
   {
     title: "Products",
     sub_links: [
       { text: "Cappuccino", url: "#" },
-      { text: "Latte", url: "#" },
+      { text: "Espresso", url: "#" },
     ],
   },
   {

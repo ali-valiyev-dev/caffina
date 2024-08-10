@@ -3,13 +3,16 @@ import gsap from "gsap";
 import PropTypes from "prop-types";
 
 const PulsingShadow = ({ position }) => {
+  const boxShadowFrom = "0px 0px 300px 150px rgba(90, 66, 58, 0.10)";
+  const boxShadowTo = "0px 0px 300px 150px rgba(193, 166, 141, 0.15)";
+
   const divRef = useRef(null);
   useEffect(() => {
     gsap.fromTo(
       divRef.current,
-      { boxShadow: "0px 0px 300px 150px rgba(35, 114, 73, 0.10)" },
+      { boxShadow: boxShadowFrom },
       {
-        boxShadow: "0px 0px 300px 150px rgba(53, 198, 107, 0.15)",
+        boxShadow: boxShadowTo,
         duration: 5,
         repeat: -1,
         yoyo: true,

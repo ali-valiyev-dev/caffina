@@ -11,7 +11,7 @@ const ScrollToTop = () => {
       onClick={scrollToTop}
       type="button"
       aria-label="Scroll to top"
-      className="flex items-center justify-center w-14 h-14 border border-[#237249] rounded-2xl text-[#237249] text-5xl font-light xl:w-20 xl:h-20 xl:rounded-3xl active:bg-[#35c66b]">
+      className="flex items-center justify-center w-14 h-14 border border-cappuccino-light rounded-2xl text-cappuccino-light text-5xl font-light xl:w-20 xl:h-20 xl:rounded-3xl hover:bg-espresso transition-all duration-300">
       &#8593;
     </button>
   );

@@ -12,7 +12,7 @@ const ShowcaseImage = ({ mirror, imgSrc, alt }) => {
       )}>
       <div
         className={classNames(
-          "absolute w-[163px] md:w-[465px] h-[240px] md:h-[684px] bg-[#237249] overflow-hidden clip-cut-edge",
+          "absolute w-[163px] md:w-[465px] h-[240px] md:h-[684px] bg-espresso overflow-hidden clip-cut-edge",
           {
             "transform scale-x-[-1]": mirror,
           }
@@ -33,17 +33,6 @@ const ShowcaseImage = ({ mirror, imgSrc, alt }) => {
           className={classNames("w-full h-full clip-cut-edge", {
             "transform scale-x-[-1]": mirror,
           })}
-        />
-
-        <img
-          className={classNames("max-md:hidden absolute -top-10", {
-            "-left-10": mirror,
-            "-right-10": !mirror,
-          })}
-          src="/star-mark-2.svg"
-          alt=""
-          width={250}
-          height={250}
         />
       </div>
     </div>

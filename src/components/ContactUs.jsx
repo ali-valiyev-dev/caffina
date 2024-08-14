@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { subtitles, titles } from "../../constants";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
@@ -5,42 +6,24 @@ import ShowcaseImage from "./ShowcaseImage";
 import PulsingShadow from "./PulsingShadow";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
-import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { animateElements } from "../utils/Animations";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ContactUs = () => {
   useEffect(() => {
-    gsap.fromTo(
-      ".animate-contacts-image",
-      { opacity: 0, x: -50 },
+    animateElements([
       {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-contacts-image",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-    gsap.fromTo(
-      ".animate-contacts-text",
-      { opacity: 0, x: 50 },
+        selector: ".animate-contacts-image",
+        from: { opacity: 0, x: -50 },
+      },
       {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-contacts-text",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
+        selector: ".animate-contacts-text",
+        from: { opacity: 0, x: 50 },
+      },
+    ]);
   }, []);
 
   return (
@@ -52,14 +35,12 @@ const ContactUs = () => {
         <div className="my-9 xl:my-0">
           <SectionSubtitle subtitle={subtitles[4]} />
         </div>
-
         <div className="text-white font-medium text-xl xl:text-[32px] flex flex-col gap-5 xl:gap-7">
           <div className="flex items-center gap-2">
             <InstagramIcon
               className="text-cappuccino"
               style={{ fontSize: "1.2em" }}
             />
-
             <a
               href="#"
               rel="noopener noreferrer"
@@ -67,13 +48,11 @@ const ContactUs = () => {
               @supercoffee
             </a>
           </div>
-
           <div className="flex items-center gap-2">
             <PhoneOutlinedIcon
               className="text-cappuccino"
               style={{ fontSize: "1.2em" }}
             />
-
             <a
               href="tel:+79999999999"
               className="hover:underline">
@@ -81,7 +60,6 @@ const ContactUs = () => {
             </a>
           </div>
         </div>
-
         <PulsingShadow position="top-40 left-40" />
       </div>
 
@@ -90,7 +68,6 @@ const ContactUs = () => {
           mirror={true}
           imgSrc="/showcase-3.jpg"
         />
-
         <img
           className="sm:hidden h-max flex self-center"
           src="/beans-heart.png"
@@ -99,7 +76,6 @@ const ContactUs = () => {
           width={120}
           height={120}
         />
-
         <PulsingShadow position="top-40 right-80" />
       </div>
 

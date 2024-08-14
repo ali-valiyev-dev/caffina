@@ -1,52 +1,35 @@
+import { useEffect, useState } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import {
   products as initialProducts,
   subtitles,
   titles,
 } from "../../constants";
-import { useEffect, useState } from "react";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ProductCard from "./ProductCard";
 import PulsingShadow from "./PulsingShadow";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { animateElements } from "../utils/Animations";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Products = () => {
-  useEffect(() => {
-    gsap.fromTo(
-      ".animate-products-title",
-      { opacity: 0, x: 1000 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-products-title",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-    gsap.fromTo(
-      ".animate-products-list",
-      { opacity: 0, x: -1000 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-products-list",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-  }, []);
-
   const [products, setProducts] = useState(initialProducts);
   const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    animateElements([
+      {
+        selector: ".animate-products-title",
+        from: { opacity: 0, x: 1000 },
+      },
+      {
+        selector: ".animate-products-list",
+        from: { opacity: 0, x: -1000 },
+      },
+    ]);
+  }, []);
 
   const handleNext = () => {
     setIsTransitioning(true);
@@ -71,22 +54,15 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="animate-products-list flex items-center xl:mt-14 ">
-        <div className="w-[100rem] flex gap-9 xl:gap-12 justify-end  xl:pr-14 overflow-hidden ">
+      <div className="animate-products-list flex items-center xl:mt-14">
+        <div className="w-[100rem] flex gap-9 xl:gap-12 justify-end xl:pr-14 overflow-hidden">
           {products.map(product => (
             <div
               key={product.id}
               className={`transition-transform duration-500 ease-in-out ${
                 isTransitioning ? "transform translate-x-[120%]" : ""
               }`}>
-              <ProductCard
-                name={product.name}
-                description={product.description}
-                price={product.price}
-                rating={product.rating}
-                image={product.image}
-                alt={product.alt}
-              />
+              <ProductCard {...product} />
             </div>
           ))}
         </div>
@@ -95,7 +71,7 @@ const Products = () => {
           <button
             onClick={handleNext}
             type="button"
-            className="w-14 xl:w-20 h-14 xl:h-20 border border-cappuccino text-cappuccino active:bg-espresso  transition-all duration-300 ease-in-out text-3xl rounded-2xl xl:rounded-3xl">
+            className="w-14 xl:w-20 h-14 xl:h-20 border border-cappuccino text-cappuccino active:bg-espresso transition-all duration-300 ease-in-out text-2xl xl:text-3xl rounded-2xl xl:rounded-3xl">
             &#8594;
           </button>
         </div>

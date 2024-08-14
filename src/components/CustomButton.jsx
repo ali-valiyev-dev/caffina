@@ -9,8 +9,7 @@ const CustomButton = ({
   return (
     <button
       onClick={onClick}
-      className={`custom-button rounded-[83px] w-max font-semibold -tracking-[0.02em] flex items-center justify-center border text-white px-7 xl:px-10 py-3 xl:py-3 text-base lg:text-xl ${bgColor} ${borderColor}
-      `}>
+      className={`custom-button rounded-[83px] w-max font-semibold tracking-tight flex items-center justify-center border text-white px-7 xl:px-10 py-3 xl:py-3 text-base lg:text-xl ${bgColor} ${borderColor}`}>
       {title}
     </button>
   );

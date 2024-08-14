@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
-    <div className="bg-transparent flex justify-center max-w-max max-h-max  items-center">
-      <h1 className="text-[22px] md:text-4xl -tracking-[0.03em] font-extrabold text-transparent bg-clip-text bg-espresso-gradient">
+    <div className="flex items-center justify-center bg-transparent">
+      <h1 className="text-[22px] md:text-4xl font-extrabold text-transparent bg-clip-text bg-espresso-gradient tracking-tight">
         Caffina
       </h1>
     </div>

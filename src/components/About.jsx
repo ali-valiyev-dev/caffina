@@ -7,39 +7,22 @@ import SectionTitle from "./SectionTitle";
 import ShowcaseImage from "./ShowcaseImage";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { animateElements } from "../utils/Animations";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   useEffect(() => {
-    gsap.fromTo(
-      ".animate-about-image",
-      { opacity: 0, x: -50 },
+    animateElements([
       {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-about-image",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-    gsap.fromTo(
-      ".animate-about-text",
-      { opacity: 0, x: 50 },
+        selector: ".animate-about-image",
+        from: { opacity: 0, x: -50 },
+      },
       {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-about-text",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
+        selector: ".animate-about-text",
+        from: { opacity: 0, x: 50 },
+      },
+    ]);
   }, []);
 
   return (
@@ -51,9 +34,7 @@ const About = () => {
           mirror={false}
           imgSrc="/interior-1.jpg"
         />
-
         <PulsingShadow position="bottom-40 left-40" />
-
         <img
           className="sm:hidden h-max"
           src="/beans-heart.png"
@@ -64,19 +45,17 @@ const About = () => {
         />
       </div>
 
-      <div className="animate-about-text flex flex-col justify-center relative z-30 px-0 md:px-6 xl:px-0 lg:max-w-[457px]">
+      <div className="animate-about-text flex flex-col justify-center relative z-30 px-0 md:px-6 xl:px-0 xl:max-w-[457px]">
         <SectionTitle title={titles[1]} />
         <PulsingShadow position="top-40 right-40" />
         <div className="my-9 lg:my-14">
           <SectionSubtitle subtitle={subtitles[1]} />
         </div>
-
         <div className="relative flex items-center justify-center">
           <img
             src="/cooking-process.jpg"
             alt="Cooking Process"
           />
-
           <div className="absolute">
             <CustomButton title="&#9654; Cooking Process" />
           </div>

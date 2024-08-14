@@ -6,59 +6,42 @@ import PulsingShadow from "./PulsingShadow";
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { animateElements } from "../utils/Animations";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Events = () => {
   useEffect(() => {
-    gsap.fromTo(
-      ".animate-events-title",
-      { opacity: 0, x: -1000 },
+    animateElements([
       {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-events-title",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-    gsap.fromTo(
-      ".animate-events-first-row",
-      { opacity: 0, x: 1000 },
+        selector: ".animate-contacts-title",
+        from: { opacity: 0, x: -1000 },
+      },
       {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-events-first-row",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-    gsap.fromTo(
-      ".animate-events-second-row",
-      { opacity: 0, x: -1000 },
+        selector: ".animate-events-first-row",
+        from: { opacity: 0, x: 1000 },
+      },
       {
-        opacity: 1,
-        x: 0,
-        duration: 1.5,
-        scrollTrigger: {
-          trigger: ".animate-events-first-row",
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      }
-    );
+        selector: ".animate-events-second-row",
+        from: { opacity: 0, x: -1000 },
+      },
+    ]);
   }, []);
+
+  const getColSpanClass = index => {
+    if (index === events.length - 1) {
+      return "col-span-6 xl:col-span-2 animate-events-second-row";
+    }
+    if (index > 1) {
+      return "col-span-6 md:col-span-3 xl:col-span-2 animate-events-second-row";
+    }
+    return "col-span-6 md:col-span-3 xl:col-span-3 animate-events-first-row";
+  };
 
   return (
     <section
       id="events"
-      className="relative py-8 flex flex-col ">
+      className="relative py-8 flex flex-col">
       <div className="animate-events-title xl:float-end max-xl:px-10 xl:pr-32 flex flex-col xl:flex-row-reverse xl:gap-[72px] xl:items-center z-50">
         <SectionTitle title={titles[3]} />
         <div className="my-9 xl:my-0 xl:w-[500px]">
@@ -70,13 +53,7 @@ const Events = () => {
         {events.map((event, index) => (
           <div
             key={event.id}
-            className={`${
-              index === events.length - 1
-                ? "col-span-6 xl:col-span-2 animate-events-second-row"
-                : index > 1
-                ? "col-span-6 md:col-span-3 xl:col-span-2 animate-events-second-row"
-                : "col-span-6 md:col-span-3 xl:col-span-3 animate-events-first-row"
-            }`}>
+            className={getColSpanClass(index)}>
             <EventItem
               image={event.image}
               title={event.title}

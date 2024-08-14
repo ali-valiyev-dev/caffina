@@ -7,12 +7,10 @@ const Footer = () => {
   return (
     <footer className="bg-dark-gray z-50 relative flex flex-col gap-9 xl:gap-16 p-6 xl:px-32 xl:py-9">
       <div className="flex flex-col xl:flex-row justify-between gap-9">
-        <div className="main-top-mobile">
-          <div className="flex justify-between">
-            <Logo />
-            <div className="xl:hidden">
-              <ScrollToTop />
-            </div>
+        <div className="flex justify-between">
+          <Logo />
+          <div className="xl:hidden">
+            <ScrollToTop />
           </div>
         </div>
 

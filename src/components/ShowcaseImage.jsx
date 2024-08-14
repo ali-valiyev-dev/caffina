@@ -6,19 +6,14 @@ const ShowcaseImage = ({ mirror, imgSrc, alt }) => {
     <div
       className={classNames(
         "relative w-[197px] md:w-[505px] h-[256px] md:h-[724px] flex items-end",
-        {
-          "justify-end": mirror,
-        }
+        { "justify-end": mirror }
       )}>
       <div
         className={classNames(
           "absolute w-[163px] md:w-[465px] h-[240px] md:h-[684px] bg-espresso overflow-hidden clip-cut-edge",
-          {
-            "transform scale-x-[-1]": mirror,
-          }
+          { "scale-x-[-1]": mirror }
         )}
       />
-
       <div
         className={classNames(
           "relative w-[163px] md:w-[465px] h-[240px] md:h-[684px] overflow-hidden",
@@ -29,9 +24,9 @@ const ShowcaseImage = ({ mirror, imgSrc, alt }) => {
         )}>
         <img
           src={imgSrc}
-          alt={alt}
+          alt={alt || "Showcase Image"}
           className={classNames("w-full h-full clip-cut-edge", {
-            "transform scale-x-[-1]": mirror,
+            "scale-x-[-1]": mirror,
           })}
         />
       </div>

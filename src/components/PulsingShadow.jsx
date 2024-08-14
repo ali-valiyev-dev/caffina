@@ -7,8 +7,9 @@ const PulsingShadow = ({ position }) => {
   const boxShadowTo = "0px 0px 300px 150px rgba(193, 166, 141, 0.15)";
 
   const divRef = useRef(null);
+
   useEffect(() => {
-    gsap.fromTo(
+    const animation = gsap.fromTo(
       divRef.current,
       { boxShadow: boxShadowFrom },
       {
@@ -19,7 +20,11 @@ const PulsingShadow = ({ position }) => {
         ease: "power3.inOut",
       }
     );
-  }, []);
+
+    return () => {
+      animation.kill();
+    };
+  }, [boxShadowFrom, boxShadowTo]);
 
   return (
     <div
@@ -30,7 +35,7 @@ const PulsingShadow = ({ position }) => {
 };
 
 PulsingShadow.propTypes = {
-  position: PropTypes.string,
+  position: PropTypes.string.isRequired,
 };
 
 export default PulsingShadow;

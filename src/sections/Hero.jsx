@@ -29,9 +29,9 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative bg-transparent py-10 lg:py-20 lg:px-10 xl:px-32">
+      className="relative bg-transparent py-10 lg:py-20 px-6 lg:px-10 xl:px-32">
       <div className="relative flex flex-col lg:flex-row lg:justify-between z-20">
-        <div className="animate-hero-text max-w-[574px] px-6 lg:px-10 pt-7 lg:pt-0 z-30">
+        <div className="animate-hero-text max-w-[574px]  pt-7 lg:pt-0 z-30">
           <SectionTitle title={titles[0]} />
 
           <div className="my-9 lg:my-14">

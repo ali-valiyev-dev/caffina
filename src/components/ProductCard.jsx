@@ -4,7 +4,7 @@ import { CustomButton } from "../common";
 
 const ProductCard = ({ name, description, price, rating, image, alt }) => {
   return (
-    <div className="rounded-[20px] lg:rounded-[30px] px-5 lg:px-11 py-5 lg:py-6 border border-cappuccino-light w-[183px] lg:w-[277px] h-[380px] lg:h-[565px] text-center flex flex-col justify-between items-center">
+    <div className="rounded-[20px] lg:rounded-[30px] px-5 lg:px-11 py-5 lg:py-6 border border-cappuccino-light w-[183px] lg:w-[277px] h-full text-center flex flex-col gap-4 lg:gap-6 justify-between items-center">
       <div className="relative h-[141px] lg:h-[241px] flex items-center justify-center overflow-hidden">
         <div className="w-28 lg:w-44 h-28 lg:h-44 bg-espresso-gradient rounded-full" />
         <img

@@ -42,7 +42,7 @@ const Products = () => {
     <section
       id="products"
       className="relative py-8 xl:py-4">
-      <div className="animate-products-title max-xl:px-10 xl:ml-32 max-w-[908px] flex flex-col xl:flex-row xl:gap-[88px] xl:items-center">
+      <div className="animate-products-title px-6 lg:px-10 xl:pl-32 max-w-[1000px] flex flex-col xl:flex-row xl:gap-[88px] xl:items-center">
         <SectionTitle title={titles[2]} />
         <div className="my-9 xl:my-0">
           <SectionSubtitle subtitle={subtitles[2]} />

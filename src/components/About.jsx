@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { subtitles, titles } from "../../constants";
 import CustomButton from "./CustomButton";
-import PulsingShadow from "./PulsingShadow";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ShowcaseImage from "./ShowcaseImage";
@@ -34,7 +33,6 @@ const About = () => {
           mirror={false}
           imgSrc="/interior-1.jpg"
         />
-        <PulsingShadow position="bottom-40 left-40" />
         <img
           className="sm:hidden h-max"
           src="/beans-heart.png"
@@ -47,7 +45,6 @@ const About = () => {
 
       <div className="animate-about-text flex flex-col justify-center relative z-30 px-0 md:px-6 xl:px-0 xl:max-w-[457px]">
         <SectionTitle title={titles[1]} />
-        <PulsingShadow position="top-40 right-40" />
         <div className="my-9 lg:my-14">
           <SectionSubtitle subtitle={subtitles[1]} />
         </div>

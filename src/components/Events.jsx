@@ -2,7 +2,6 @@ import { events, subtitles, titles } from "../../constants";
 import EventItem from "./EventItem";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
-import PulsingShadow from "./PulsingShadow";
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -68,9 +67,6 @@ const Events = () => {
         alt=""
         aria-hidden="true"
       />
-      <PulsingShadow position="bottom-72 right-96 z-10" />
-      <PulsingShadow position="bottom-72 left-96 z-10" />
-      <PulsingShadow position="top-1/2 left-1/2 z-10" />
     </section>
   );
 };

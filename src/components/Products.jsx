@@ -9,7 +9,6 @@ import {
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ProductCard from "./ProductCard";
-import PulsingShadow from "./PulsingShadow";
 import { animateElements } from "../utils/Animations";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -76,7 +75,6 @@ const Products = () => {
           </button>
         </div>
       </div>
-      <PulsingShadow position="bottom-72 right-72 z-10" />
     </section>
   );
 };

@@ -3,7 +3,6 @@ import { subtitles, titles } from "../../constants";
 import SectionSubtitle from "./SectionSubtitle";
 import SectionTitle from "./SectionTitle";
 import ShowcaseImage from "./ShowcaseImage";
-import PulsingShadow from "./PulsingShadow";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import gsap from "gsap";
@@ -60,7 +59,6 @@ const ContactUs = () => {
             </a>
           </div>
         </div>
-        <PulsingShadow position="top-40 left-40" />
       </div>
 
       <div className="animate-contacts-text relative flex flex-row-reverse md:justify-center xl:items-end gap-5 z-50">
@@ -76,7 +74,6 @@ const ContactUs = () => {
           width={120}
           height={120}
         />
-        <PulsingShadow position="top-40 right-80" />
       </div>
 
       <img

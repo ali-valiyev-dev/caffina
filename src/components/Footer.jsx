@@ -1,5 +1,5 @@
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { footerLinks } from "../../constants";
+import { footerLinks } from "/constants";
 import { Logo, ScrollToTop } from "../common";
 
 const Footer = () => {

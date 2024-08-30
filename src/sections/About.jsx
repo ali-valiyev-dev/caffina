@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { subtitles, titles } from "../../constants";
+import { subtitles, titles } from "/constants";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { animateElements } from "../utils/Animations";

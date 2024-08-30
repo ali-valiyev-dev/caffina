@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { subtitles, titles } from "../../constants";
+import { subtitles, titles } from "/constants";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import gsap from "gsap";

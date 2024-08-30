@@ -1,13 +1,11 @@
 import { useEffect } from "react";
 import { subtitles, titles } from "../../constants";
-import SectionSubtitle from "./SectionSubtitle";
-import SectionTitle from "./SectionTitle";
-import ShowcaseImage from "./ShowcaseImage";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { animateElements } from "../utils/Animations";
+import { SectionSubtitle, SectionTitle, ShowcaseImage } from "../common";
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import CustomButton from "./CustomButton";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
+import { CustomButton } from "../common";
 
 const ProductCard = ({ name, description, price, rating, image, alt }) => {
   return (

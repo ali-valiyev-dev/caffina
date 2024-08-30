@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import CustomButton from "./CustomButton";
+import { CustomButton } from "../common";
 
 const EventItem = ({ image, title }) => {
   return (

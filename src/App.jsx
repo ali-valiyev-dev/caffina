@@ -1,12 +1,6 @@
-import {
-  About,
-  ContactUs,
-  Events,
-  Footer,
-  Hero,
-  Navbar,
-  Products,
-} from "./components";
+import { About, ContactUs, Events, Hero, Products } from "./sections";
+
+import { Footer, Navbar } from "./components";
 
 export default function App() {
   return (

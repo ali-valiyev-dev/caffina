@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import {
-  products as initialProducts,
-  subtitles,
-  titles,
-} from "../../constants";
-import SectionSubtitle from "./SectionSubtitle";
-import SectionTitle from "./SectionTitle";
-import ProductCard from "./ProductCard";
+import { products as initialProducts, subtitles, titles } from "/constants";
+import { ProductCard } from "../components";
 import { animateElements } from "../utils/Animations";
+
+import { SectionSubtitle, SectionTitle } from "../common";
 
 gsap.registerPlugin(ScrollTrigger);
 

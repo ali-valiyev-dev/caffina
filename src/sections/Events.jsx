@@ -1,11 +1,10 @@
-import { events, subtitles, titles } from "../../constants";
-import EventItem from "./EventItem";
-import SectionSubtitle from "./SectionSubtitle";
-import SectionTitle from "./SectionTitle";
+import { events, subtitles, titles } from "/constants";
+import { EventItem } from "../components";
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { animateElements } from "../utils/Animations";
+import { SectionSubtitle, SectionTitle } from "../common";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +12,7 @@ const Events = () => {
   useEffect(() => {
     animateElements([
       {
-        selector: ".animate-contacts-title",
+        selector: ".animate-events-title",
         from: { opacity: 0, x: -1000 },
       },
       {

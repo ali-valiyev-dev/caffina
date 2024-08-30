@@ -1,7 +1,6 @@
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { footerLinks } from "../../constants";
-import ScrollToTop from "./ScrollToTop";
-import Logo from "./Logo";
+import { Logo, ScrollToTop } from "../common";
 
 const Footer = () => {
   return (

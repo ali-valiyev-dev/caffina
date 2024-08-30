@@ -1,12 +1,10 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { titles, subtitles, stats } from "../../constants";
-import SectionTitle from "./SectionTitle";
-import SectionSubtitle from "./SectionSubtitle";
-import CustomButton from "./CustomButton";
-import Statistic from "./Statistic";
+import { titles, subtitles, stats } from "/constants";
+import { Statistic } from "../components";
 import { animateElements } from "../utils/Animations";
+import { SectionSubtitle, SectionTitle, CustomButton } from "../common";
 
 gsap.registerPlugin(ScrollTrigger);
 

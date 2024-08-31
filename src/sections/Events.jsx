@@ -39,7 +39,7 @@ const Events = () => {
   return (
     <section
       id="events"
-      className="relative py-14 px-6 lg:px-10 xl:px-32 flex flex-col">
+      className="relative py-14 px-6 lg:px-10 xl:px-32 flex flex-col max-w-screen-2xl mx-auto">
       <div className="animate-events-title xl:float-end flex flex-col xl:flex-row-reverse xl:gap-[72px] xl:items-center z-50">
         <SectionTitle title={titles[3]} />
         <div className="my-9 xl:my-0 xl:w-[500px]">

@@ -13,15 +13,15 @@ const Hero = () => {
     animateElements([
       {
         selector: ".animate-hero-text",
-        from: { opacity: 0, x: -50 },
+        from: { opacity: 0, x: -20 },
       },
       {
         selector: ".animate-hero-stats",
-        from: { opacity: 0, x: -50 },
+        from: { opacity: 0, x: -20 },
       },
       {
         selector: ".animate-hero-img",
-        from: { opacity: 0, x: 50 },
+        from: { opacity: 0, x: 20 },
       },
     ]);
   }, []);

@@ -14,11 +14,11 @@ const ContactUs = () => {
     animateElements([
       {
         selector: ".animate-contacts-image",
-        from: { opacity: 0, x: -50 },
+        from: { opacity: 0, x: -20 },
       },
       {
         selector: ".animate-contacts-text",
-        from: { opacity: 0, x: 50 },
+        from: { opacity: 0, x: 20 },
       },
     ]);
   }, []);

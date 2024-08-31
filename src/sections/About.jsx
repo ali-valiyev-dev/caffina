@@ -17,11 +17,11 @@ const About = () => {
     animateElements([
       {
         selector: ".animate-about-image",
-        from: { opacity: 0, x: -50 },
+        from: { opacity: 0, x: -20 },
       },
       {
         selector: ".animate-about-text",
-        from: { opacity: 0, x: 50 },
+        from: { opacity: 0, x: 20 },
       },
     ]);
   }, []);

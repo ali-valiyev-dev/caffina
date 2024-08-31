@@ -1,4 +1,4 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
+import { Icon } from "@iconify/react";
 import { footerLinks } from "/constants";
 import { Logo, ScrollToTop } from "../common";
 
@@ -52,9 +52,11 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="Visit Instagram profile"
           className="w-8 md:w-12 flex items-center justify-center">
-          <InstagramIcon
+          <Icon
+            icon="mdi:instagram"
             className="text-cappuccino"
-            style={{ fontSize: "2rem" }}
+            width={32}
+            height={32}
           />
         </a>
       </div>

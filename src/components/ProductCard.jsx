@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import StarBorderIcon from "@mui/icons-material/StarBorder";
+import { Icon } from "@iconify/react";
 import { CustomButton } from "../common";
 
 const ProductCard = ({ name, description, price, rating, image, alt }) => {
@@ -22,7 +22,11 @@ const ProductCard = ({ name, description, price, rating, image, alt }) => {
         <h3 className="font-medium text-xl lg:text-2xl text-white">{price}$</h3>
         <span className="font-normal text-sm lg:text-xl text-latte flex items-center">
           {rating}
-          <StarBorderIcon />
+          <Icon
+            icon="mdi:star-outline"
+            width={16}
+            height={16}
+          />
         </span>
       </div>
 

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { subtitles, titles } from "/constants";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
+import { Icon } from "@iconify/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { animateElements } from "../utils/Animations";
@@ -32,27 +31,29 @@ const ContactUs = () => {
         <div className="my-9 xl:my-0">
           <SectionSubtitle subtitle={subtitles[4]} />
         </div>
-        <div className="text-white font-medium text-xl xl:text-[32px] flex flex-col gap-5 xl:gap-7">
+        <div className=" font-medium text-xl xl:text-[32px] flex flex-col gap-5 xl:gap-7 text-cappuccino">
           <div className="flex items-center gap-2">
-            <InstagramIcon
-              className="text-cappuccino"
-              style={{ fontSize: "1.2em" }}
+            <Icon
+              icon="mdi:instagram"
+              width={32}
+              height={32}
             />
             <a
               href="#"
               rel="noopener noreferrer"
-              className="hover:underline">
+              className="hover:underline text-white">
               @supercoffee
             </a>
           </div>
           <div className="flex items-center gap-2">
-            <PhoneOutlinedIcon
-              className="text-cappuccino"
-              style={{ fontSize: "1.2em" }}
+            <Icon
+              icon="mdi:phone"
+              width={32}
+              height={32}
             />
             <a
               href="tel:+79999999999"
-              className="hover:underline">
+              className="hover:underline text-white">
               +7-999-999-99-99
             </a>
           </div>

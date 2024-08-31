@@ -4,8 +4,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { products as initialProducts, subtitles, titles } from "/constants";
 import { ProductCard } from "../components";
 import { animateElements } from "../utils/Animations";
-
 import { SectionSubtitle, SectionTitle } from "../common";
+import { Icon } from "@iconify/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,8 +66,12 @@ const Products = () => {
           <button
             onClick={handleNext}
             type="button"
-            className="w-14 xl:w-20 h-14 xl:h-20 border border-cappuccino text-cappuccino active:bg-espresso transition-all duration-300 ease-in-out text-2xl xl:text-3xl rounded-2xl xl:rounded-3xl">
-            &#8594;
+            className="flex items-center justify-center w-14 xl:w-20 h-14 xl:h-20 border border-cappuccino text-cappuccino active:bg-espresso transition-all duration-300 ease-in-out text-2xl xl:text-3xl rounded-2xl xl:rounded-3xl">
+            <Icon
+              icon="mdi:arrow-right"
+              width={32}
+              height={32}
+            />
           </button>
         </div>
       </div>

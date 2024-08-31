@@ -50,7 +50,7 @@ const Products = () => {
       </div>
 
       <div className="animate-products-list flex items-center xl:mt-14">
-        <div className="w-[100rem] flex gap-9 xl:gap-12 justify-end xl:pr-14 ">
+        <div className="w-[100rem] flex gap-9 xl:gap-12 justify-end xl:pr-14 overflow-hidden">
           {products.map(product => (
             <div
               key={product.id}

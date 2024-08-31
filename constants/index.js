@@ -1,3 +1,10 @@
+export const navLinks = [
+  { href: "about", label: "How It's Made" },
+  { href: "products", label: "Products" },
+  { href: "events", label: "Events" },
+  { href: "contacts", label: "Contact Us" },
+];
+
 export const titles = [
   "New Cafe by Caffina",
   "We make delicious",

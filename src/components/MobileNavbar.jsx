@@ -47,16 +47,33 @@ const MobileNavbar = ({ isOpen, setIsOpen }) => {
         ))}
       </NavLinksWrapper>
 
-      {/* <div className="absolute bottom-0 left-0 flex justify-center w-full gap-6 py-4">
-          {SOCIAL_LINKS.map((link, index) => (
-            <SocialLink
-              key={index}
-              {...link}
-            />
-          ))}
-
-          <ResumeLink />
-        </div> */}
+      <div className="absolute bottom-0 flex items-center justify-center w-full gap-6 py-4 text-cappuccino font-medium text-xl flex-col">
+        <div className="flex gap-2">
+          <Icon
+            icon="mdi:instagram"
+            width={32}
+            height={32}
+          />
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            className="hover:underline text-latte">
+            @supercoffee
+          </a>
+        </div>
+        <div className="flex items-center gap-2">
+          <Icon
+            icon="mdi:phone"
+            width={32}
+            height={32}
+          />
+          <a
+            href="tel:+79999999999"
+            className="hover:underline text-latte">
+            +7-999-999-99-99
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

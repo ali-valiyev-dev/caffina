@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative px-6 lg:px-10 xl:px-32 py-8 xl:py-16 max-xl:gap-12 flex flex-col xl:flex-row xl:justify-between">
+      className="relative px-6 lg:px-10 xl:px-32 py-14 xl:py-16 max-xl:gap-12 flex flex-col xl:flex-row xl:justify-between">
       <div className="animate-about-image relative z-30 flex justify-between md:justify-center items-center">
         <ShowcaseImage
           mirror={false}
